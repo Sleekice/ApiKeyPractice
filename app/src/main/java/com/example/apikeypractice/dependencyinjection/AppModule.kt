@@ -28,6 +28,7 @@ class AppModule {
        return Gson()
    }
 
+
     @Provides
     fun providesHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
