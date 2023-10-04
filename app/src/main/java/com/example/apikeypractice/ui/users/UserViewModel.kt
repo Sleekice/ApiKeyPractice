@@ -1,13 +1,13 @@
-package com.example.apikeypractice.ui.notifications
+package com.example.apikeypractice.ui.users
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class UserViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is notifications Fragment"
+        value = "This is home Fragment"
     }
     val text: LiveData<String> = _text
 }

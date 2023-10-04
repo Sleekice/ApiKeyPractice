@@ -8,7 +8,7 @@ class RepositoryImplementation @Inject constructor(
     private val service: ApiEndpoint
 ) : Repository {
 
-    
+
 //    override suspend fun getPeopleInfo(): Response<ArrayList<PeopleInfoItemModel>> {
 //        return service.getPeopleInfo()
 //    }
