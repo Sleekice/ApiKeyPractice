@@ -9,25 +9,26 @@ import com.example.apikeypractice.R
 import com.example.apikeypractice.databinding.UserItemBinding
 
 class UserAdapter {
-    private val pplData: ArrayList<>,
-    private val pplData: ArrayList<>,
+    private val userData: ArrayList<>
 
-    ) : RecyclerView.Adapter<UserAdapter.AdapterVoewHolder>() {
+    ) : RecyclerView.Adapter<UserAdapter.AdapterViewHolder>() {
 
 
         // Inner class representing a view holder for each item in the RecyclerView.
-        inner class PeopleViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        inner class UserViewHolder(view: View) : RecyclerView.ViewHolder(view) {
             // Bind the XML layout for each item in the RecyclerView.
             val binding = UserItemBinding.bind(view)
 
             // Set up the UI for a specific item using the provided peopleData and position.
             fun setUpUI(peopleData: , position: Int) {
 
+
+
                 // Set the first name and last name to the corresponding TextView.
-                binding.firstName.text = "${peopleData.firstName} ${peopleData.lastName}"
+
 
                 // Set the job title and email to the corresponding TextView.
-                binding.email.text = "${peopleData.jobtitle}\n${peopleData.email}"
+
 
                 // Get the avatar URL from the data.
                 val imageUrl = peopleData.avatar
@@ -49,10 +50,5 @@ class UserAdapter {
 
 
         // Override the getItemCount method to return the total number of items in pplData.
-        override fun getItemCount() = pplData.size
 
-        fun updatePeopleList(peopleDetails: java.util.ArrayList<PeopleInfoItemModel>) {
-            pplData.addAll(peopleDetails)
-            notifyDataSetChanged()
 
-           }
