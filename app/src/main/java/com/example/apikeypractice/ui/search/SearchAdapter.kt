@@ -12,10 +12,6 @@ import com.example.apikeypractice.databinding.ItemSearchBinding
 
 class SearchAdapter {
 
-    private val data: ArrayList<SearchItemModel?>?,
-    private val function: (item: SearchItemModel) -> Unit,
-    ) : RecyclerView.Adapter<SearchAdapter.CustomViewHolder>()
-    {
 
-    }
+
 }
