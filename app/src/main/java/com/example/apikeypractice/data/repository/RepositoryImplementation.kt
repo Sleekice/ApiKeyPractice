@@ -1,5 +1,6 @@
 package com.example.apikeypractice.data.repository
 
+import com.example.apikeypractice.data.model.users.UserModel
 import com.example.apikeypractice.data.remote.ApiEndpoint
 import retrofit2.Response
 import javax.inject.Inject
@@ -9,12 +10,8 @@ class RepositoryImplementation @Inject constructor(
 ) : Repository {
 
 
-//    override suspend fun getPeopleInfo(): Response<ArrayList<PeopleInfoItemModel>> {
-//        return service.getPeopleInfo()
-//    }
-//
-//
-//    override suspend fun getRoomDetails(): Response<ArrayList<RoomDetailsItemModel>> {
-//        return service.getRoomDetails()
-//    }
+    override suspend fun getPeopleInfo(): Response<ArrayList<UserModel>> {
+        return service.getPeopleInfo()
+    }
+
 }

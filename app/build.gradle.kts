@@ -26,11 +26,11 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "API_KEY", "\"Authorization: token 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 \"")
+            buildConfigField("String", "API_KEY", "\"Authorization: token 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\"")
         }
 
         debug {
-            buildConfigField("String", "API_KEY", "\"Authorization: token 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 \"")
+            buildConfigField("String", "API_KEY", "\"Authorization: token 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\"")
         }
     }
 
@@ -108,8 +108,8 @@ dependencies {
 
 
     // HILT
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-android-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
 
 
     implementation("androidx.core:core-ktx:1.9.0")

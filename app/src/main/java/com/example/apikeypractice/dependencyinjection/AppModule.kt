@@ -29,14 +29,18 @@ class AppModule {
    }
 
 
+    //Interceptors
     @Provides
     fun providesHttpClient(): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(
                 HttpLoggingInterceptor()
                     .setLevel(HttpLoggingInterceptor.Level.BODY)
-            ).build()
+            )
+
+            .build()
     }
+
 
     @Provides
     fun providesRetrofit(
