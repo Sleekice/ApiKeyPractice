@@ -13,8 +13,9 @@ import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 import com.example.apikeypractice.R
 import com.example.apikeypractice.databinding.FragmentProfileBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class ProfileFragment : Fragment() {
 
     private var _binding: FragmentProfileBinding? = null
@@ -37,10 +38,6 @@ class ProfileFragment : Fragment() {
         val name = arguments?.getString("profileName")
         val hmtlLink = arguments?.getString("userLink")
         //val followingURL = arguments?.getString("profileFollowing")
-
-
-
-
 
         Glide.with(this)
             .load(image)

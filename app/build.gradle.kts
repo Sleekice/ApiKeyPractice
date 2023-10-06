@@ -26,11 +26,11 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            buildConfigField("String", "API_KEY", "\"Authorization: token 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\"")
+            buildConfigField("String", "API_KEY", "\"Authorization: token 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\"")
         }
 
         debug {
-            buildConfigField("String", "API_KEY", "\"Authorization: token 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\"")
+            buildConfigField("String", "API_KEY", "\"Authorization: token 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\"")
         }
     }
 
@@ -59,6 +59,7 @@ dependencies {
     implementation("androidx.recyclerview:recyclerview:1.3.1")
     implementation("androidx.recyclerview:recyclerview-selection:1.1.0")
     implementation ("androidx.appcompat:appcompat:1.3.0")
+    implementation("junit:junit:4.12")
 
     //Annotation Processor for Image in Data Class File
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")

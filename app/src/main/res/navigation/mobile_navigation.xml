@@ -25,6 +25,9 @@
         tools:layout="@layout/fragment_search" >
 
         <action
+            android:id="@+id/action_navigation_search_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+        <action
             android:id="@+id/action_navigation_search_to_navigation_user"
             app:destination="@id/navigation_user" />
     </fragment>

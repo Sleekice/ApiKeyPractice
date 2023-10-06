@@ -4,6 +4,7 @@ import com.example.apikeypractice.data.model.searchusers.SearchItemModel
 import com.example.apikeypractice.data.model.users.UserModel
 import retrofit2.Response
 import retrofit2.http.GET
+import retrofit2.http.Headers
 import retrofit2.http.Path
 import retrofit2.http.Query
 
@@ -12,9 +13,13 @@ interface ApiEndpoint {
     @GET(ApiDetails.USERS_ENDPOINT)
     suspend fun getPeopleInfo(): Response<ArrayList<UserModel>>
 
-    @GET("search/users")
-    fun getUsers(@Query("q") query: String): Response<SearchItemModel>
+//    @GET("search/users")
+//    fun getUsers(@Query("q") query: String): Response<SearchItemModel>
 
+    @GET(ApiDetails.SEARCH_ENDPOINT)
+    suspend fun setSearch(
+        @Query("q") query: String
+    ): Response<SearchItemModel>
 
 //    @GET("users/{login}")
 //    fun getProfile(@Path("login") login: String): Observable<Response<ProfileResponse>>

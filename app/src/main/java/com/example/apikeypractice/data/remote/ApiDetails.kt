@@ -10,7 +10,7 @@ object ApiDetails {
 
     val BASE_URL = "https://api.github.com/"
 
-
+    const val SEARCH_ENDPOINT = "search/users"
 
 
     const val USERS_ENDPOINT = "users"
